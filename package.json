@@ -1,19 +1,25 @@
 {
-  "name": "aula-metodos",
+  "name": "metodos_objetos_e_arrays",
   "version": "1.0.0",
+  "description": "**Sintaxe básica JS**",
   "main": "app.js",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {},
   "scripts": {
     "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarianaFAndrade/Reprograma-Aula04-ArrayseObjeto.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "assertion-error": "^1.1.0",
-    "readline-sync": "^1.4.10"
+  "bugs": {
+    "url": "https://github.com/MarianaFAndrade/Reprograma-Aula04-ArrayseObjeto/issues"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
-  },
-  "description": ""
+  "homepage": "https://github.com/MarianaFAndrade/Reprograma-Aula04-ArrayseObjeto#readme"
 }

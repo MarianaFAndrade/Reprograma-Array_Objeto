@@ -1,5 +1,8 @@
 const livros = require('./database');
 
+// const listaOrdenada = livros.sort((a,b) => {
+//     return a.pagina - b.pagina
+// })
 livros.sort(function (a, b) {
 	
 	return (a.pagina > b.pagina) ? 1 : ((b.pagina > a.pagina) ? -1 : 0);
@@ -18,7 +21,7 @@ if (descobrirLivros.toLocaleUpperCase() === 'S'){
 
     const qualCategoria = pegarEntrada.question('Qual categoria voce escolhe?');
 
-    const categoria = livros.filter(livros => livros.categoria === qualCategoria);
+    const categoria = livros.filter(livro => livro.categoria === qualCategoria);
 
     console.table(categoria);
     
@@ -34,7 +37,7 @@ const recomendacao = pegarEntrada.question('Deseja recomendação de livros para
 if (recomendacao.toLocaleUpperCase() === 'S'){
     console.log('Essas são as recomendações: ');
 
-    const recomenda = livros.filter(livros => livros.recomenda === true);
+    const recomenda = livros.filter(livro => livro.recomenda === true);
 
     console.table(recomenda);
     
@@ -49,7 +52,7 @@ const desejo = pegarEntrada.question('Deseja ver a lista de desejos?  (S/N)');
 if (desejo.toLocaleUpperCase() === 'S'){
     console.log('Essa é a lista de desejos: ');
 
-    const deseja = livros.filter(livros => livros.leu === false);
+    const deseja = livros.filter(livro => livro.leu === false);
 
     console.table(deseja);
     
